@@ -19,7 +19,7 @@ class MQClient
      * @param config: necessary configs
      */
     public function __construct($endPoint, $accessId,
-        $accessKey, $securityToken, Config $config = NULL)
+        $accessKey, $securityToken = NULL, Config $config = NULL)
     {
         if (empty($endPoint)) {
             throw new InvalidArgumentException(400, "Invalid endpoint");
